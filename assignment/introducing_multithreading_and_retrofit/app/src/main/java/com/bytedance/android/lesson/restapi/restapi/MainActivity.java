@@ -1,5 +1,6 @@
 package com.bytedance.android.lesson.restapi.restapi;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -73,5 +74,18 @@ public class MainActivity extends AppCompatActivity {
         // Retrofit
 //        Joke j = NetworkUtils.getResponseWithRetrofit();
 //        mTv.setText(j.getValue().getJoke());
+
     }
+//    static class NetWorkAsyncTask extends AsyncTask<String,Void,String>{
+//        @Override
+//        protected String doInBackground(String... strings){
+//            String s = NetworkUtils.getResponseWithHttpURLConnection(strings[0]);
+//            return s;
+//        }
+//
+//        @Override
+//        protected void onPostExecute(String s) {
+//            super.onPostExecute(s);
+//        }
+//    }
 }
